@@ -1,3 +1,30 @@
 .header {
+    width: 100%;
+    height: 120px;
+    background-color: #0C70F2;
+
+    &__div{
+        padding-top: 45px;
+        padding-left: 5%;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 100px;
+
+        h1 {
+            font-family: Poppins;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 37.5px;
+            text-align: left;
+            cursor: pointer;
+        }
+    }
+
+    &__h1{
+        background-color: white;
+        padding: 10px;
+        color: #0C70F2;
+    }
 
 }
