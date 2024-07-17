@@ -1,4 +1,45 @@
 .body {
-   padding-top: 100px; 
-  color: white;
+    margin-top: 200px; 
+    color: white;
+    text-align: center;
+
+    &__text{
+        font-size: 35px;
+    }
+
+    &__div01 {
+
+        margin-left: 20%;
+        margin-right: 20%;
+        border-bottom: 4px solid rgb(177, 170, 170);
+
+        ul {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        li{
+            list-style: none;
+            font-family: Raleway;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 35.22px;
+        }
+    }
+
+    &__div02 {
+        margin-top: 50px;
+
+        button {
+            width: 300px;
+            background-color: #0C70F2;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
 }
