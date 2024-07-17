@@ -41,5 +41,18 @@
             font-size: 20px;
             cursor: pointer;
         }
+
+        ul {
+            margin-top: 100px;
+            justify-content: space-evenly;
+        }
+        
+        li{
+            list-style: none;
+            font-family: Raleway;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 35.22px;
+        }
     }
 }

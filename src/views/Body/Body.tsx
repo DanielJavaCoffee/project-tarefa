@@ -3,8 +3,9 @@ import Modal from "../../components/Modal/Modal";
 import { useState } from "react";
 
 function Body() {
-    const Tarefas: string[] = []; // Inicializa como um array vazio de strings
     const [showModal, setShowModal] = useState(false);
+
+    const [tasks, setTasks] = useState<string[]>([]);
 
     function isVisible() {
         setShowModal(true);
@@ -26,11 +27,12 @@ function Body() {
             </div>
 
             <div className="body__div02" id="div02">
-                {Tarefas.length === 0 ? (
+                {tasks.length === 0 ? (
                     <button onClick={isVisible}>Vamos realizar Tarefas!</button>
                 ) : (
+
                     <ul>
-                        {Tarefas.map((tarefa, index) => (
+                        {tasks.map((tarefa, index) => (
                             <li key={index}>{tarefa}</li>
                         ))}
                     </ul>
@@ -39,7 +41,9 @@ function Body() {
                                 title="Digite o Nome Da Tarefa." 
                                 text="Colocar as descrições das tarefas aqui."
                                 textButtonA="Desistir"
-                                textButtonB="Salvar"/>
+                                textButtonB="Salvar"
+                                setTask={setTasks}
+                                />
                 }
             </div>
         </section>
