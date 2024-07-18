@@ -1,30 +1,83 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TarefasApp
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TarefasApp é uma aplicação web desenvolvida com React para ajudar você a gerenciar suas tarefas diárias. Adicione, visualize e organize suas tarefas de maneira simples e eficiente.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Adicionar Tarefas:** Crie novas tarefas para organizar seu dia.
+- **Visualizar Tarefas:** Veja todas as suas tarefas em uma lista.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **[React](https://reactjs.org/):** Biblioteca JavaScript para construção de interfaces de usuário.
+- **[TypeScript](https://www.typescriptlang.org/):** Superconjunto de JavaScript que adiciona tipagem estática ao código.
+- **[SCSS](https://sass-lang.com/):** Pré-processador CSS que permite usar variáveis, aninhamento, mixins e mais.
+- **[Vite](https://vitejs.dev/):** Ferramenta de construção rápida para projetos web modernos.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Requisitos
+
+- **[Node.js](https://nodejs.org/)** >= 12.x
+- **npm** (ou **yarn**) para gerenciamento de pacotes
+
+## Instalação
+
+1. Clone o repositório:
+
+    ```sh
+    git clone https://github.com/seu-usuario/tarefasapp.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```sh
+    cd tarefasapp
+    ```
+
+3. Instale as dependências:
+
+    ```sh
+    npm install
+    # ou
+    yarn install
+    ```
+
+## Uso
+
+1. Inicie o servidor de desenvolvimento:
+
+    ```sh
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
+2. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
+
+## Estrutura do Projeto
+
+```plaintext
+tarefasapp/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   └── Modal/
+│   │       ├── Modal.tsx
+│   │       └── Modal.scss
+│   ├── views/
+│   │   ├── Header/
+│   │   │   ├── Header.tsx
+│   │   │   └── Header.scss
+│   │   ├── Body/
+│   │   │   ├── Body.tsx
+│   │   │   └── Body.scss
+│   ├── index.css
+│   ├── main.tsx
+│   └── ...
+├── package.json
+└── README.md
